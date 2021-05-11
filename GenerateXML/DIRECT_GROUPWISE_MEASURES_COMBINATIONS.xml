@@ -1,0 +1,38 @@
+<sglib>
+
+	<opt threads="1" />
+		
+	<namespaces>
+		<nm prefix="HP" ref="http://purl.obolibrary.org/obo/hp/" />
+	</namespaces>
+
+	<graphs>    
+		<graph uri="http://g/">    
+			<data>
+				<file format="obo" path="hp.obo" />    
+				<file format="TSV_ANNOT" path="annotated_phenotypes.tsv" prefixSubject="http://g/" prefixObject="http://g/" header="false" />    
+			</data>
+		
+		
+		<actions>
+            <action type="REROOTING" root_uri="HP:0000118" />
+        </actions>
+		
+		</graph>    
+	</graphs>
+
+	<sml module="sm" graph="http://g/">
+
+		<opt_module threads="1" />
+        
+       
+        <measures type="groupwise">
+            
+        
+        
+        </measures>
+        
+
+		<queries id="BMA_computation" type="oTOo" file="all_pairs.tsv" output="scores_direct_groupwise_combinations.tsv" noAnnots="set=-1" notFound="exclude" uri_prefix="http://g/" output_basename="false" />
+	</sml>
+</sglib>
