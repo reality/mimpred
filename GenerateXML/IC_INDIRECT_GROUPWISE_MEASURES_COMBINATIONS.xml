@@ -40,6 +40,6 @@
         </measures>
         
 
-		<queries id="BMA_computation" type="oTOo" file="all_pairs.tsv" output="scores_all_IC_indirect_groupwise_combinations.tsv" noAnnots="set=-1" notFound="exclude" uri_prefix="http://g/" output_basename="false" />
+		<queries id="BMA_computation" type="oTOo" file="all_pairs.tsv" output="Results/scores_all_IC_indirect_groupwise_combinations.tsv" noAnnots="set=-1" notFound="exclude" uri_prefix="http://g/" output_basename="false" />
 	</sml>
 </sglib>
