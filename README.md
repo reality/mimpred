@@ -25,3 +25,5 @@ Evaluation of the similarity measures for predicting primary diagnosis, producin
 Plot ROC curves for individual measures, and histograms of the evaluation metrics across all similarity measures. 
 
 
+A version of all notebooks is available in 'Notebooks_with_output' with our outputs visible for reference.
+
